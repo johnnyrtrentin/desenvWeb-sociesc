@@ -35,9 +35,6 @@ a {
 }
 
 .imagem-de-fundo {
-/*     
-    background-image:url(../images/hot-dog.jpg);width: auto;height: auto;
-    display: inline-block; */
     background: url(../images/hot-dog.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -51,7 +48,6 @@ a {
   }
   
   .footer {
-    /* display: inline-block; */
     position: absolute;
     left: 0;
     right: 0;
@@ -64,13 +60,22 @@ a {
     padding: 20px 20px;
   } 
   
+  .footer-info::first-line {
+      color:yellow;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+  }
+
   .footer-info {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-    font-style: italic;
     font-size: 17px;
     color: cornsilk;
     margin: 10px 85px 10px;
+  }
+
+  :not(.footer-info) {
+    font-style: italic;
   }
   
   *,
