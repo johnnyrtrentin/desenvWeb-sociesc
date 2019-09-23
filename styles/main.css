@@ -1,4 +1,3 @@
-
 p {
     color: aliceblue;
 }
@@ -29,6 +28,53 @@ a {
     color: white;
 }
 
-.teste {
-    font-size: 50px;
+.logo {
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
+
+.imagem-de-fundo {
+/*     
+    background-image:url(../images/hot-dog.jpg);width: auto;height: auto;
+    display: inline-block; */
+    background: url(../images/hot-dog.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.template {
+    margin-bottom: 5%;
+  }
+  
+  .footer {
+    /* display: inline-block; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color:#77191a;
+    width:100%;
+    height:40px;
+    margin-left: -08px;
+    margin-bottom: -4%;
+    padding: 20px 20px;
+  } 
+  
+  .footer-info {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 17px;
+    color: cornsilk;
+    margin: 10px 85px 10px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+  box-sizing: inherit;
+  }
