@@ -7,103 +7,92 @@
 	<title>Will Hot-Dog</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='../styles/NossoHotDog.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../styles/main.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../styles/navbar.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../styles/footer.css'>
 </head>
 
-<body class="p">
-	<div class="header">
-		<span>
-			<a href="../index.html" class="header-itens">Home</a>
-			<a href="../html/NossoHotDog.html" class="header-itens">Nosso Hot-Dog</a>
-			<a href="../html/localização.html" class="header-itens">Localização</a>
-		</span>
+<body>
+	<input type="checkbox" id="btnResponsive" />
+	<div class="topnav responsive" id="top-bar">
+		<a href="../index.html">Home</a>
+		<a href="../html/NossoHotDog.html" class="active">Nosso Hot-Dog</a>
+		<a href="../html/localização.html">Localização</a>
+		<label class="btn" for="btnResponsive"><a class="icon noselect"> &#9776; </a></label>
 	</div>
-
 	<br>
 	<div style="text-align: center">
 		<h1 style="text-align:center; font-style:oblique">Nosso Hot Dog</h1>
 		<img src="../images/doghome.JPG" height="70" width="150">
 	</div>
-	<br>
-	<br>
-	<br>
-
-	<div>
-		<span>
-			<figure>
+	<div class="cardapio">
+		<div class="hot-dog">
+			<div>
 				<img src="../images/Hot-Dog1.png" alt=">Dog Vinagrete" height="100" width="140">
-				<span>
-					<h3 class="descricao">Dog Vinagrete</h3>
-				</span>
-			</figure>
-
-		</span>
-		<span>
-			<figure>
+			</div>
+			<span>
+				<h3 class="descricao">Dog Vinagrete <a class="preco">5,50</a></h3>
+			</span>
+		</div>
+		<div class="hot-dog">
+			<div>
 				<img src="../images/Hot-Dog2.png" alt="Dog Tradicional" height="100" width="140">
-				<span>
-					<h3 class="descricao">Dog Tradicional</h3>
-				</span>
-			</figure>
-		</span>
-		<span>
-			<figure>
+			</div>
+			<span>
+				<h3 class="descricao">Dog Tradicional <a class="preco">5,50</a></h3>
+			</span>
+		</div>
+		<div class="hot-dog">
+			<div>
 				<img src="../images/Hot-Dog3.png" alt="Dog Pimenta" height="100" width="140">
-				<span>
-					<h3 class="descricao">Dog Pimenta</h3>
-				</span>
-			</figure>
-
-		</span>
-
-	</div>
-
-	<div>
-
-		<span>
-			<figure>
+			</div>
+			<span>
+				<h3 class="descricao">Dog Pimenta <a class="preco">5,50</a></h3>
+			</span>
+		</div>
+		<div class="hot-dog">
+			<div>
 				<img src="../images/Hot-Dog4.png" alt="Dog Burger" height="100" width="180">
-				<span>
-					<h3 class="descricao">Dog Burger</h3>
-				</span>
-			</figure>
-		</span>
-		<span>
-			<figure>
+			</div>
+			<span>
+				<h3 class="descricao">Dog Burger <a class="preco">5,50</a></h3>
+			</span>
+		</div>
+		<div class="hot-dog">
+			<div>
 				<img src="../images/Hot-Dog5.png" alt="Dog Completo" height="100" width="160">
-				<span>
-					<h3 class="descricao">Dog Completo</h3>
-				</span>
-			</figure>
-		</span>
-		<span>
-    
-	<figure style="margin-bottom: 40px;">
+			</div>
+			<span>
+				<h3 class="descricao">Dog Completo <a class="preco">5,50</a></h3>
+			</span>
+		</div>
+		<div class="hot-dog">
+			<div>
 				<img src="../images/Hot-Dog6.png" alt="Dog Frango" height="100" width="160">
-				<span>
-					<h3 class="descricao">Dog Frango</h3>
-				</span>
-			</figure>
-		</span>
-	</div>
-	</div>
-
-	<div class="footer">
-		<div class="footer-info" align="center">
-			Will Hot-Dogs Gourmet
+			</div>
+			<span>
+				<h3 class="descricao">Dog Frango <a class="preco">5,50</a></h3>
+			</span>
 		</div>
-		<div>
-			<span class="footer-info">
+	</div>
+	<footer>
+		<div class="wrapper">
+			<div class="col-1"><span> Will Hot-Dogs Gourmet</span></div>
+			<div class="col-2">
+				<span class="sub-title">Endereço:</span>
+				</br>
+				Rua: XXXX, Número 000, Bairro: XXXXX
+				</br>
+				<span class="sub-title">Contato:</span>
+				</br>
 				Telefone: (XX) XXXX-XXXX
-			</span>
-			<span class="footer-info">
-				Endereço: Rua: XXXX, Número 000, Bairro: XXXXX
-			</span>
-
-			<span class="footer-info">
+				</br>
 				Email: XXXXX@gmail.com
-			</span>
+				</br>
+			</div>
 		</div>
-	</div>
+		</div>
+	</footer>
 </body>
 
 </html>

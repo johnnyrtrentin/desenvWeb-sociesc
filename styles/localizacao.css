@@ -1,94 +1,25 @@
-p {
-    color: aliceblue;
-}
-
-a {
-    text-decoration: none;
-}
-
-.header {
-    margin: -.618em -1em;
-    padding: 15px 24px;
-    background-color: #77191a;
-}
-
-.header-itens {
-    display: inline-block;
-    vertical-align: middle;
-
-    font-family: proxima-nova;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 14px;
-
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    padding-right: 30px;
-
-    color: white;
-}
 .mapa {
-
-    width: 440px;
-    margin: 0px auto;
+    width: 35vh;
+    height: 35vh;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-p,h1,h2,h3,h4,h5{
-
+p, h1, h2, h3, h4, h5 {
     text-align: center;
 }
 
-h1::before {
-    content: open-quote;
-}
-
-h1::after {
-    content: close-quote;
-}
-
-h4,h1{
-    font-style: oblique;
-
-}
-
-.template {
-    margin-bottom: 5%;
-  }
-  
-  .footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom:0;
-    background-color:#77191a;
-    width:100%;
-    height:40px;
-    margin-left: -08px;
-    margin-bottom: -34%;
-    padding: 20px 20px;
-  } 
-
-  .footer-info::first-line {
-    color:yellow;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-  
-  .footer-info {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 17px;
-    color: cornsilk;
-    margin: 10px 85px 10px;
-  }
-  
-  *,
-  *:before,
-  *:after {
-  box-sizing: inherit;
+@media screen and (max-width: 600px) {
+    .cardapio {
+      margin: 50px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+    }
+    footer {
+      position: initial !important;
+    }
   }

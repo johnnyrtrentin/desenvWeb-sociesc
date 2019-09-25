@@ -7,39 +7,43 @@
     <title>Will Hot-Dog</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/navbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/footer.css'>
 </head>
 
-<body class="p">
-    <div class="header">
-        <span>
-            <a href="../desenv_web/index.html" class="header-itens">Home</a>
-            <a href="../desenv_web/html/NossoHotDog.html" class="header-itens">Nosso Hot-Dog</a>
-            <a href="../desenv_web/html/localização.html" class="header-itens">Localização</a>
-        </span>
+<body class="bg-image">
+    <input type="checkbox" id="btnResponsive" />
+    <div class="topnav responsive" id="top-bar">
+        <a href="#" class="active">Home</a>
+        <a href="./html/NossoHotDog.html">Nosso Hot-Dog</a>
+        <a href="./html/localização.html">Localização</a>
+        <label class="btn" for="btnResponsive"><a class="icon noselect"> &#9776; </a></label>
+    </div>
+    <div id="content">
+        <div class="image_container">
+            <img src="images/will-topper.png">
+        </div>
     </div>
 
-    <div class="logo">
-        <p align="center"><img src="images/will-topper.png" width="30%" height="30%"></p>
-    </div>
-    <br>
-    <div class="footer">
-        <div class="footer-info" align="center">
-            Will Hot-Dogs Gourmet
-        </div>
-        <div>
-            <span class="footer-info">
+
+    <footer>
+        <div class="wrapper">
+            <div class="col-1"><span> Will Hot-Dogs Gourmet</span></div>
+            <div class="col-2">
+                <span class="sub-title">Endereço:</span>
+                </br>
+                Rua: XXXX, Número 000, Bairro: XXXXX
+                </br>
+                <span class="sub-title">Contato:</span>
+                </br>
                 Telefone: (XX) XXXX-XXXX
-            </span>
-            <span class="footer-info">
-                Endereço: Rua: XXXX, Número 000, Bairro: XXXXX
-            </span>
-
-            <span class="footer-info">
+                </br>
                 Email: XXXXX@gmail.com
-            </span>
+                </br>
+            </div>
         </div>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
