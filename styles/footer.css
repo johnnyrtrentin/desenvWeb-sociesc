@@ -7,6 +7,15 @@ footer {
   display: inline-table;
 }
 
+.footer2 {
+  background-color: #77191a;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: inline-table;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -30,8 +39,6 @@ footer {
   grid-row: 1;
   color: white;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .wrapper {
