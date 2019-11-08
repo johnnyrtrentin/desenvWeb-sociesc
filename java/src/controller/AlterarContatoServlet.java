@@ -25,8 +25,10 @@ public class AlterarContatoServlet extends HttpServlet {
 		Contato contato = new Contato();
 		contato.setId(Integer.valueOf(req.getParameter("id")));
 		contato.setNome(req.getParameter("nome"));
-		contato.setEmail(req.getParameter("email"));
 		contato.setSobrenome(req.getParameter("sobrenome"));
+		contato.setTelefone(req.getParameter("telefone"));
+		contato.setEmail(req.getParameter("email"));
+		contato.setSenha(req.getParameter("senha"));
 		
 		repositorio.Alterar(contato);
 		

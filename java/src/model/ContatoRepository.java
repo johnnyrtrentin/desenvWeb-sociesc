@@ -43,7 +43,7 @@ public class ContatoRepository {
 				contato.setSobrenome(pContato.getSobrenome());
 				contato.setTelefone(pContato.getTelefone());
 				contato.setEmail(pContato.getEmail());
-				contato.setSenha(pContato.getSenha());
+				contato.setSenha(pContato.getSenha()); 
 			}
 		}
 	}
