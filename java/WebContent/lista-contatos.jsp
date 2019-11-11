@@ -13,14 +13,20 @@
 <body>
 <h1> Lista contatos </h1>
 <ul>
-	<c:if test="${not empty contatos}" var = "tetse"> </c:if>
+	<c:if test="${not empty contatos}"> 
 	<c:forEach items="${contatos}" var="contato">
-		<li>${contato.nome} (${contato.email})
+		<li> <strong>Nome:</strong> ${contato.nome} ${contato.sobrenome} 
+			 <strong>Email:</strong>  ${contato.email}
+			 <strong>Senha:</strong> ${contato.senha}
+			 <strong>Telefone:</strong>  ${contato.telefone}
 		<a href="/desenvolvweb/excluir-contato?id=${contato.id}"> Excluir</a> 
 		<a href="busca-contato?id=${contato.id}"> Alterar</a>
 		</li>
 	</c:forEach>
-	
+	</c:if>
+	<c:if test="${empty contatos}"> 
+	<h2 style="color: red;">Nenhum contato cadastrado</h2>
+	</c:if>
 </ul>
 </body>
 </html>
