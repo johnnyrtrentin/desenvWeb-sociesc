@@ -13,14 +13,24 @@ import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import model.ContatoRepository;
 
-@WebServlet(urlPatterns = "/excluir-contato")
-public class ExcluirContatoServlet extends HttpServlet{
-
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+@WebServlet(urlPatterns = "/alterar-contato")
+public class EditServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-
+		
 		ContatoRepository repositorio = new ContatoRepository();
-		repositorio.Excluir(Integer.valueOf(req.getParameter("id")));
+		Contato contato = new Contato();
+		contato.setId(Integer.valueOf(req.getParameter("id")));
+		contato.setNome(req.getParameter("nome"));
+		contato.setSobrenome(req.getParameter("sobrenome"));
+		contato.setTelefone(req.getParameter("telefone"));
+		contato.setEmail(req.getParameter("email"));
+		contato.setSenha(req.getParameter("senha"));
+		
+		repositorio.Alterar(contato);
 		
 		List<Contato> lista = repositorio.getContatos();
 		
@@ -31,3 +41,4 @@ public class ExcluirContatoServlet extends HttpServlet{
 		rd.forward(req, resp);
 	}
 }
+

@@ -9,7 +9,7 @@
 <title>Altera Contato</title>
 </head>
 <body>
-	<form action="/desenvolvweb/alterar-contato" method="POST">
+	<form action="/desenvolvweb/menu/alterar-contato" method="POST">
 				
 		<input type="hidden"  name="id" value="${contato.id}">
 		Nome: <br><input type="text" name="nome" value="${contato.nome}"><br>

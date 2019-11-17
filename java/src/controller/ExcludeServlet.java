@@ -13,26 +13,22 @@ import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import model.ContatoRepository;
 
-@WebServlet("/busca-contato")
-public class BuscarContatoServlet extends HttpServlet {
-       
-   
+@WebServlet(urlPatterns = "/excluir-contato")
+public class ExcludeServlet extends HttpServlet{
+	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		
+
 		ContatoRepository repositorio = new ContatoRepository();
-		Contato contato = repositorio.getByID(Integer.valueOf(req.getParameter("id")));
+		repositorio.Excluir(Integer.valueOf(req.getParameter("id")));
 		
-		req.setAttribute("contato", contato);
+		List<Contato> lista = repositorio.getContatos();
 		
-		RequestDispatcher rd = req.getRequestDispatcher("altera-contato.jsp");
+		req.setAttribute("contatos", lista);
+		
+		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos.jsp");
 		
 		rd.forward(req, resp);
-		
 	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}
-
 }

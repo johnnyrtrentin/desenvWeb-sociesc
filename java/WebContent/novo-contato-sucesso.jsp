@@ -13,7 +13,9 @@
 	<strong>Nome:</strong> ${contato.nome} ${contato.sobrenome}<br>
 	<strong>Telefone:</strong> ${contato.telefone}<br>
 	<strong>Email:</strong> ${contato.email}<br>
-	<strong>Senha:</strong> ${contato.senha} <br>
+<!--<strong>Senha:</strong> ${contato.senha} <br>-->
+
+<a href="http://localhost:8080/desenvolvweb/login.html">Voltar para a página de LOGIN</a>
 
 </body>
 </html>

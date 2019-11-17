@@ -1,7 +1,6 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ContatoRepository {
@@ -35,7 +34,7 @@ public class ContatoRepository {
 			}
 		}
 	}
-
+	
 	public void Alterar(Contato pContato) {
 		for (Contato contato : contatos) {
 			if (contato.getId() == pContato.getId()) {
@@ -46,5 +45,13 @@ public class ContatoRepository {
 				contato.setSenha(pContato.getSenha()); 
 			}
 		}
+	}
+	
+	public boolean verifyLogin(String em, String pw) {
+		for (Contato contato : contatos) {
+			if (contato.getEmail().equals(em) && contato.getSenha().equals(pw))
+				return true;
+		}
+		return false;
 	}
 }

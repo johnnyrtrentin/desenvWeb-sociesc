@@ -13,27 +13,15 @@ import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import model.ContatoRepository;
 
-@WebServlet(urlPatterns = "/alterar-contato")
-public class AlterarContatoServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/lista-contatos")
+public class ListServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
-       
-	
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		
 		ContatoRepository repositorio = new ContatoRepository();
-		Contato contato = new Contato();
-		contato.setId(Integer.valueOf(req.getParameter("id")));
-		contato.setNome(req.getParameter("nome"));
-		contato.setSobrenome(req.getParameter("sobrenome"));
-		contato.setTelefone(req.getParameter("telefone"));
-		contato.setEmail(req.getParameter("email"));
-		contato.setSenha(req.getParameter("senha"));
-		
-		repositorio.Alterar(contato);
 		
 		List<Contato> lista = repositorio.getContatos();
-		
 		req.setAttribute("contatos", lista);
 		
 		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos.jsp");
@@ -41,4 +29,3 @@ public class AlterarContatoServlet extends HttpServlet {
 		rd.forward(req, resp);
 	}
 }
-

@@ -1,12 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-
-
-import java.util.Date;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,10 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import model.ContatoRepository;
 
-@SuppressWarnings("serial")
-@WebServlet(urlPatterns="/novo-contato" )
-public class NovoContatoServlet extends HttpServlet {
-	 
+@WebServlet(urlPatterns="/novo-contato")
+public class NewServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
