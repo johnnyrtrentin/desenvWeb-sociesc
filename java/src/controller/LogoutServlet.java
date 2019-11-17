@@ -14,6 +14,6 @@ public class LogoutServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String serverPath = request.getContextPath();
-		response.sendRedirect(serverPath + "/login.html");
+		response.sendRedirect(serverPath + "/login.jsp");
 	}
 }

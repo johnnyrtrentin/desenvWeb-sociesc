@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import model.ContatoRepository;
 
-@WebServlet(urlPatterns = "/alterar-contato")
+@WebServlet(urlPatterns = "/menu/alterar-contato")
 public class EditServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -36,7 +36,7 @@ public class EditServlet extends HttpServlet {
 		
 		req.setAttribute("contatos", lista);
 		
-		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("/menu/lista-contatos.jsp");
 		
 		rd.forward(req, resp);
 	}

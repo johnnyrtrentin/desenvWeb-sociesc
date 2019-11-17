@@ -18,7 +18,7 @@
 	
 	<a href="${newContact}/novo-contato.html">Novo Contato</a><br>
 <!-- <a href="${editContact}/menu/edit-contact.jsp">Alterar Contato</a><br> -->
-	<a href="${listContact}/lista-contatos">Listar Contato</a><br>
+	<a href="${listContact}/menu/lista-contatos">Listar Contato</a><br>
 	<a href="${logout}/logout">Logout</a>
 </body>
 </html>

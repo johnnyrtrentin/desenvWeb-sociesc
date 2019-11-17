@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import model.ContatoRepository;
 
-@WebServlet(urlPatterns = "/lista-contatos")
+@WebServlet(urlPatterns = "/menu/lista-contatos")
 public class ListServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 

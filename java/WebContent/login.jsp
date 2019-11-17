@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="ISO-8859-1"%>
+ <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +18,10 @@
 			
 			<label for="password">Senha</label>
 			<input type="password" id="password" name="password"/>
-			
-			<br><button type="submit">Logar-se</button>
+				
+			<div>
+				<button type="submit">Logar-se</button>
+			</div>
 		</div>
 		<div>
 			<a href="http://localhost:8080/desenvolvweb/novo-contato.html">Cadastre-se</a>

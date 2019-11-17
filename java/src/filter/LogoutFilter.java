@@ -18,7 +18,8 @@ public class LogoutFilter implements Filter {
 		HttpServletRequest httpRequest = (HttpServletRequest) request;
 		HttpSession session = httpRequest.getSession(false);
 
-		session.invalidate();
+		if (session != null)
+			session.invalidate();
 
 		chain.doFilter(request, response);
 	}

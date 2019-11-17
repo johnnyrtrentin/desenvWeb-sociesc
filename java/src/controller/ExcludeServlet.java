@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Contato;
 import model.ContatoRepository;
 
-@WebServlet(urlPatterns = "/excluir-contato")
+@WebServlet(urlPatterns = "/menu/excluir-contato")
 public class ExcludeServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 
@@ -27,7 +27,7 @@ public class ExcludeServlet extends HttpServlet{
 		
 		req.setAttribute("contatos", lista);
 		
-		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("/menu/lista-contatos.jsp");
 		
 		rd.forward(req, resp);
 	}
