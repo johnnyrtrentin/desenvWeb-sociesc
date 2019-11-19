@@ -9,6 +9,8 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 @WebFilter(urlPatterns = "/novo-contato")
@@ -18,14 +20,15 @@ public class NewFilter implements Filter {
 
 		HttpServletRequest httpRequest = (HttpServletRequest) request;
 
-		String fName = (String) httpRequest.getAttribute("name");
-		String fLastName = (String) httpRequest.getAttribute("sobrenome");
-		String fEmail = (String) httpRequest.getAttribute("email");
-		String fPassword = (String) httpRequest.getAttribute("password");
-		String fPhoneNumber = (String) httpRequest.getAttribute("telefone");
-
+		String fName = httpRequest.getParameter("nome");
+		String fLastName = httpRequest.getParameter("sobrenome");
+		String fEmail = httpRequest.getParameter("email");
+		String fPassword = httpRequest.getParameter("password");
+		String fPhoneNumber = httpRequest.getParameter("telefone");
+		
 		if (fName == null || "".equals(fName) || fLastName == null || "".equals(fLastName) || fEmail == null
 				|| "".equals(fEmail) || fPassword == null || "".equals(fPassword) || fPhoneNumber == null || "".equals(fPhoneNumber)) {
+			System.out.println("aa");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/novo-contato.html");
 			dispatcher.forward(request, response);
 		} else 
