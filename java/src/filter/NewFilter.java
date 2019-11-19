@@ -9,9 +9,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 
 @WebFilter(urlPatterns = "/novo-contato")
 public class NewFilter implements Filter {
@@ -28,7 +25,6 @@ public class NewFilter implements Filter {
 		
 		if (fName == null || "".equals(fName) || fLastName == null || "".equals(fLastName) || fEmail == null
 				|| "".equals(fEmail) || fPassword == null || "".equals(fPassword) || fPhoneNumber == null || "".equals(fPhoneNumber)) {
-			System.out.println("aa");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/novo-contato.html");
 			dispatcher.forward(request, response);
 		} else 
