@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Novo Contato</title>
+	
+	<script type="text/javascript" src="resources/js/validate-form.js"></script>
 </head>
 <body>
-	<form action="/desenvolvweb/novo-contato" method="POST">
+	<form action="/desenvolvweb/novo-contato" method="POST" onsubmit="sendForm()">
 		Nome: <br><input type="text" name="nome"><br>
 		Sobrenome: <br><input type="text" name="sobrenome"><br>
 		Telefone: <br><input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX"><br>
