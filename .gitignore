@@ -1,3 +1,2 @@
 # Pasta e aqruivos de configuração do Projeto e da IDE
-.settings
-.classpath
+*.class
