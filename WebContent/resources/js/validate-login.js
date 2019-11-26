@@ -8,12 +8,12 @@ function validateLogin() {
 	let errorMsg = [];
 	
 	if(email == "" || password == "")
-		errorMsg.push("Usuário ou senha inválidos");
+		errorMsg.push("Usuário ou senha inválidos!");
 	
 	if (errorMsg.length > 0) {
-		alert(errorMsg);;
+		alert(errorMsg);
 		fieldsOK = false;
 	}
 	
-	return true;
+	return fieldsOK;
 }

@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="resources/js/validate-login.js"></script>
 </head>
 <body>
+	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
 	<h1 style="text-align: center;">LOGIN</h1>
 	
 	<form action="/desenvolvweb/login" method="POST" onsubmit="return validateLogin()">
@@ -25,7 +26,7 @@
 			</div>
 		</div>
 		<div>
-			<a href="http://localhost:8080/desenvolvweb/novo-contato.html">Cadastre-se</a>
+			<a href="${serverURL}/novo-contato.html">Cadastre-se</a>
 		</div>
 	</form>
 </body>

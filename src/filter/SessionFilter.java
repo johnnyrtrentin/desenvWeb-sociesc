@@ -16,14 +16,14 @@ import javax.servlet.http.HttpSession;
 public class SessionFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		
+
 		HttpServletRequest httpRequest = (HttpServletRequest) request;
-		HttpSession session  = httpRequest.getSession();
-		
+		HttpSession session = httpRequest.getSession();
+
 		if (session != null && session.getAttribute("authorized") != null)
 			chain.doFilter(request, response);
 		else {
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/invalid-login.html");			
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/invalid-login.jsp");
 			dispatcher.forward(request, response);
 		}
 	}

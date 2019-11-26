@@ -22,14 +22,14 @@ function sendForm() {
 
 	if (password == "")
 		erroMsg.push("Campo senha está inválido!\n");
-	
-	if (email == "" || /\S+@\S+\.\S+/.test(email))
-			erroMsg.push("Campo e-mail está inválido!\n")
 
-	if (erroMsg.length > 0) 
+	if (email == "" || /\S+@\S+\.\S+/.test(email))
+		erroMsg.push("Campo e-mail está inválido!\n")
+
+	if (erroMsg.length > 0) {
 		validForm = false;
-	
-	alert(erroMsg.join(''));
+		alert(erroMsg.join(''));
+	}
 
 	return validForm;
 }

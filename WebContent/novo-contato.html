@@ -8,16 +8,18 @@
 </head>
 <body>
 	<form action="/desenvolvweb/novo-contato" method="POST" onsubmit="return sendForm()">
-		Nome: <br><input type="text" name="nome"><br>
-		Sobrenome: <br><input type="text" name="sobrenome"><br>
+	
+		Nome: <br><input type="text" name="nome" placeholder="Min 6 caracteres"><br>
+		Sobrenome: <br><input type="text" name="sobrenome" placeholder="Min 6 caracteres"><br>
 		Telefone: <br><input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX"><br>
-		Email: <br><input type="text" name="email"><br>
+		Email: <br><input type="text" name="email" placeholder="teste@teste.com.br"><br>
 		Senha: <br><input type="password" name="password">
 		
 		<br><br>
 		<input type="submit" value="Enviar">
+		<br>
 		<div>
-			<a href="http://localhost:8080/desenvolvweb/login.jsp">Voltar para o Login</a>
+			<a href="http://localhost:8080/desenvolvweb/login.jsp">Voltar para o Login</a><br>
 			<a href="http://localhost:8080/desenvolvweb/index.jsp">Voltar para o Menu</a>
 		</div>
 	</form>

@@ -52,6 +52,16 @@ public class ContatoRepository {
 			if (contato.getEmail().equals(em) && contato.getSenha().equals(pw))
 				return true;
 		}
+		
+		return false;
+	}
+	
+	public boolean verifyEmail(String email) {
+		for (Contato contato: contatos) {
+			if (contato.getEmail().equals(email))
+				return true;
+		}
+
 		return false;
 	}
 }

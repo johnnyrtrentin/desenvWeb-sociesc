@@ -13,9 +13,9 @@
 <body>
 	<h1> Lista contatos </h1>
 	
-	<c:set var="backButton" value="${pageContext.request.contextPath}"></c:set>
+	<c:set var="serverURL" value="${pageContext.request.contextPath}"></c:set>
 	
-	<a href="${backButton}/index.jsp">Voltar</a>
+	<a href="${serverURL}/index.jsp">Voltar</a>
 	
 	<ul>
 		<c:if test="${not empty contatos}"> 
@@ -24,7 +24,7 @@
 					 <strong>Email:</strong>  ${contato.email}
 					 <strong>Senha:</strong> ${contato.senha}
 					 <strong>Telefone:</strong>  ${contato.telefone}
-				<a href="/desenvolvweb/menu/excluir-contato?id=${contato.id}"> Excluir</a> 
+				<a href="${serverURL}/menu/excluir-contato?id=${contato.id}"> Excluir</a> 
 				<a href="busca-contato?id=${contato.id}"> Alterar</a>
 				</li>
 			</c:forEach>

@@ -11,14 +11,11 @@
 <body>
 	<h1 style="color: blue;">Menu da aplicação</h1>
 	
-	<c:set var="newContact" value="${pageContext.request.contextPath}"/>
-	<c:set var="listContact" value="${pageContext.request.contextPath}"/>
-	<c:set var="editContact" value="${pageContext.request.contextPath}"/>
-	<c:set var="logout" value="${pageContext.request.contextPath}"/>
+	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
 	
-	<a href="${newContact}/novo-contato.html">Novo Contato</a><br>
-<!-- <a href="${editContact}/menu/edit-contact.jsp">Alterar Contato</a><br> -->
-	<a href="${listContact}/menu/lista-contatos">Listar Contato</a><br>
-	<a href="${logout}/logout">Logout</a>
+	<a href="${serverURL}/novo-contato.html">Novo Contato</a><br>
+	<a href="${serverURL}/menu/edit-contact.jsp">Alterar Contato</a><br>
+	<a href="${serverURL}/menu/lista-contatos">Listar Contato</a><br>
+	<a href="${serverURL}/logout">Logout</a>
 </body>
 </html>

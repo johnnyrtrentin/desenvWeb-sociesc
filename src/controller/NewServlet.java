@@ -36,7 +36,7 @@ public class NewServlet extends HttpServlet {
 		
 		req.setAttribute("contato", contato);
 		
-		RequestDispatcher rd =req.getRequestDispatcher("novo-contato-sucesso.jsp");
+		RequestDispatcher rd =req.getRequestDispatcher("newContact-created.jsp");
 		rd.forward(req, resp);
 	}
 }
