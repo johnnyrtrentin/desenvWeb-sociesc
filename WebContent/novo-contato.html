@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="resources/js/validate-form.js"></script>
 </head>
 <body>
-	<form action="/desenvolvweb/novo-contato" method="POST" onsubmit="sendForm()">
+	<form action="/desenvolvweb/novo-contato" method="POST" onsubmit="return sendForm()">
 		Nome: <br><input type="text" name="nome"><br>
 		Sobrenome: <br><input type="text" name="sobrenome"><br>
 		Telefone: <br><input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX"><br>
@@ -17,7 +17,8 @@
 		<br><br>
 		<input type="submit" value="Enviar">
 		<div>
-			<a href="http://localhost:8080/desenvolvweb/login.jsp">Voltar</a>
+			<a href="http://localhost:8080/desenvolvweb/login.jsp">Voltar para o Login</a>
+			<a href="http://localhost:8080/desenvolvweb/index.jsp">Voltar para o Menu</a>
 		</div>
 	</form>
 

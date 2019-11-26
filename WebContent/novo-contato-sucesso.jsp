@@ -16,7 +16,7 @@
 <!--<strong>Senha:</strong> ${contato.senha} <br>-->
 
 <a href="http://localhost:8080/desenvolvweb/login.jsp">Voltar para a página de LOGIN</a><br>
-<a href="http://localhost:8080/desenvolvweb/menu/index.jsp">Voltar para o menu</a>
+<a href="http://localhost:8080/desenvolvweb/index.jsp">Voltar para o menu</a>
 
 </body>
 </html>

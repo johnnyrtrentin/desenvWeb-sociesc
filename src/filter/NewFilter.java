@@ -27,7 +27,8 @@ public class NewFilter implements Filter {
 				|| "".equals(fEmail) || fPassword == null || "".equals(fPassword) || fPhoneNumber == null || "".equals(fPhoneNumber)) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/novo-contato.html");
 			dispatcher.forward(request, response);
-		} else 
+		} 
+		else
 			chain.doFilter(request, response);
 	}
 }

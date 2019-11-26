@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import model.ContatoRepository;
-import sun.rmi.server.Dispatcher;
 
 @WebFilter(urlPatterns = "/login")
 public class LoginFilter implements Filter {
