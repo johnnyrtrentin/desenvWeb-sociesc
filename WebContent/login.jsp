@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="UTF-8"%>
  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
  
 <!DOCTYPE html>
@@ -7,11 +7,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Página de LOGIN</title>
+	<script type="text/javascript" src="resources/js/validate-login.js"></script>
 </head>
 <body>
 	<h1 style="text-align: center;">LOGIN</h1>
 	
-	<form action="/desenvolvweb/login" method="POST">
+	<form action="/desenvolvweb/login" method="POST" onsubmit="return validateLogin()">
 		<div style="text-align: center">
 			<label for="email">E-mail</label>
 			<input type="email" id="email" name="email"/><br>

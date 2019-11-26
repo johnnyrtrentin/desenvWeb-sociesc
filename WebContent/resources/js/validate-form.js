@@ -12,24 +12,24 @@ function sendForm() {
 	let validForm = true;
 
 	if (name == "" || name.length < 6)
-		erroMsg.push("Campo nome está inválido!");
+		erroMsg.push("Campo nome está inválido!\n");
 
 	if (lastName == "" || lastName.length < 6)
-		erroMsg.push("Campo sobrenome está inválido!");
+		erroMsg.push("Campo sobrenome está inválido!\n");
 
 	if (phone == "" || (/\D/.test(phone) || phone.length < 11))
-		erroMsg.push("Campo telefone está inválido!");
+		erroMsg.push("Campo telefone está inválido!\n");
 
 	if (password == "")
-		erroMsg.push("Campo senha está inválido!");
+		erroMsg.push("Campo senha está inválido!\n");
 	
 	if (email == "" || /\S+@\S+\.\S+/.test(email))
-			erroMsg.push("Campo e-mail está inválido!")
+			erroMsg.push("Campo e-mail está inválido!\n")
 
-	if (erroMsg.length != 0) {
+	if (erroMsg.length > 0) 
 		validForm = false;
-		alert (erroMsg);		
-	}
+	
+	alert(erroMsg.join(''));
 
 	return validForm;
 }
