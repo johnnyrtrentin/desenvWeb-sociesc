@@ -13,7 +13,7 @@
 	
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
 	
-	<a href="${serverURL}/novo-contato.html">Novo Contato</a><br>
+	<a href="${serverURL}/newContact.html">Novo Contato</a><br>
 	<a href="${serverURL}/menu/edit-contact.jsp">Alterar Contato</a><br>
 	<a href="${serverURL}/menu/lista-contatos">Listar Contato</a><br>
 	<a href="${serverURL}/logout">Logout</a>

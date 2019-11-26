@@ -25,8 +25,9 @@
 				<button type="submit">Logar-se</button>
 			</div>
 		</div>
+		
 		<div>
-			<a href="${serverURL}/novo-contato.html">Cadastre-se</a>
+			<a href="${serverURL}/newContact.html">Cadastre-se</a>
 		</div>
 	</form>
 </body>

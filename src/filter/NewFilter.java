@@ -27,7 +27,7 @@ public class NewFilter implements Filter {
 		String fPhoneNumber = httpRequest.getParameter("telefone");
 
 		ContatoRepository accounts = new ContatoRepository();
-		String newContactURL = "/novo-contato.html";
+		String newContactURL = "/newContact.html";
 		boolean haveAccount;
 
 		if (fName == null || "".equals(fName) || fLastName == null || "".equals(fLastName) || fEmail == null
