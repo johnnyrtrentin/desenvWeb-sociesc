@@ -3,26 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Novo Contato</title>
-	
+    <link rel="stylesheet" type="text/css" href="main.css">	
 	<script type="text/javascript" src="resources/js/validate-form.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
-	<form action="/desenvolvweb/novo-contato" method="POST" onsubmit="return sendForm()">
-	
-		Nome: <br><input type="text" name="nome" placeholder="Min 6 caracteres"><br>
-		Sobrenome: <br><input type="text" name="sobrenome" placeholder="Min 6 caracteres"><br>
-		Telefone: <br><input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX"><br>
-		Email: <br><input type="text" name="email" placeholder="teste@teste.com.br"><br>
-		Senha: <br><input type="password" name="password">
-		
-		<br><br>
-		<input type="submit" value="Enviar">
-		<br>
-		<div>
-			<a href="http://localhost:8080/desenvolvweb/login.jsp">Voltar para o Login</a><br>
-			<a href="http://localhost:8080/desenvolvweb/index.jsp">Voltar para o Menu</a>
-		</div>
-	</form>
+    <header class="top-header clearfix">
+        <div class="maxwidth">
+            <nav class="top-nav">
+                <ul>
+                    <li> <a href="newContact.html">Cadastre-se</a></li>
+                    <li> <a href="newContact-created.jsp">Novo Contato - Sucesso</a></li>
+                    <li> <a href="menu/lista-contatos.jsp">Lista Contatos</a></li>
+                    <li> <a href="menu/alterar-contato.jsp">Altera Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div> <img class="NovoContatoIcone" src="iconcadastro.gif" alt="Background"/></div>
+    <div class="container contact-form">
 
+
+<form action="/desenvolvweb/novo-contato" method="POST" onsubmit="return sendForm()">
+
+
+    <h2>Efetue o cadastro!</h2>
+	<div class="row">
+	<div class="col-md-6">
+	<div class="form-group"> <input type="text" name="nome" class="form-control" placeholder="Digitar o nome" /></div>
+	<div class="form-group"> <input type="text" name="sobrenome" class="form-control" placeholder="Digitar o sobrenome" /></div>
+    <div class="form-group"> <input type="text" name="telefone" class="form-control" placeholder="Digitar o telefone"/></div>
+    <div class="form-group"> <input type="text" name="email" class="form-control" placeholder="Digitar o e-mail" /></div>
+    <div class="form-group"> <input type="password" name="password" class="form-control" placeholder="Digitar a senha"  /></div>
+    <div class="form-group"> <input type="submit" class="btnContact" value="Enviar" /></div>
+
+    <p> </p>           
+	<span> <a class="NovoContatoBotao" href="http://localhost:8080/desenvolvweb/login.jsp">Login</a></span>
+	<span> <a class="NovoContatoBotao2" href="http://localhost:8080/desenvolvweb/index.jsp">Menu Principal</a></span>
+</div>
+</div>
+</form>
+</div>
 </body>
 </html>

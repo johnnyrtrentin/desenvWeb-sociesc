@@ -4,36 +4,66 @@
     pageEncoding="UTF-8"%>
  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Lista Contatos</title>
+	<title>Contatos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- verificar se funciona -->
+    <link rel="stylesheet" type="text/css" href="../main.css">
 </head>
 <body>
-	<h1> Lista contatos </h1>
+   <header class="top-header clearfix">
+        <div class="maxwidth">
+            <nav class="top-nav">
+                <ul>
+                    <li> <a href="novo-contato.html">Cadastre-se</a></li>
+                    <li> <a href="novo-contato-sucesso.jsp">Novo Contato - Sucesso</a></li>
+                    <li> <a href="lista-contatos.jsp">Lista Contatos</a></li>
+                    <li> <a href="alterar-contato.jsp">Altera Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="containerLista"> 
+	<h1>Contatos </h1>
 	
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"></c:set>
 	
-	<a href="${serverURL}/index.jsp">Voltar</a>
+
 	
-	<ul>
+
+	
+		<div class="tableLista">
+			<table>
+				<tr>
+					<td class="tabletitulo"><strong>NOME</strong></td>
+					<td class="tabletitulo"><strong>E-MAIL</strong></td>
+					<td class="tabletitulo"><strong>SENHA</strong></td>
+					<td class="tabletitulo"><strong>TELEFONE</strong></td>
+					<td class="tabletitulo"><strong>EXCLUIR</strong></td>
+					<td class="tabletitulo"><strong>ALTERAR</strong></td>
+				</tr>
 		<c:if test="${not empty contatos}"> 
 			<c:forEach items="${contatos}" var="contato">
-				<li> <strong>Nome:</strong> ${contato.nome} ${contato.sobrenome} 
-					 <strong>Email:</strong>  ${contato.email}
-					 <strong>Senha:</strong> ${contato.senha}
-					 <strong>Telefone:</strong>  ${contato.telefone}
-				<a href="${serverURL}/menu/excluir-contato?id=${contato.id}"> Excluir</a> 
-				<a href="busca-contato?id=${contato.id}"> Alterar</a>
-				</li>
+			<tr>
+							<td>${contato.nome} ${contato.sobrenome}</td>
+							<td>${contato.email}</td>
+							<td>${contato.senha}</td>
+							<td>${contato.telefone}</td>
+							<td><a href="${serverURL}/menu/excluir-contato?id=${contato.id}"> <img src="../img.png">
+								</a></td>
+							<td><a href="busca-contato?id=${contato.id}"> <img src="../edit.png"></a></td>
+						</tr>
 			</c:forEach>
 		</c:if>
-		
+
 		<c:if test="${empty contatos}"> 
 			<h2 style="color: red;">Nenhum contato cadastrado</h2>
 		</c:if>
-		
-	</ul>
+		</table>
+		<a href="${serverURL}/index.jsp">Voltar</a>
+		</div>		
+		</div>	
 </body>
 </html>
