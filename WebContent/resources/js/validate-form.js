@@ -11,10 +11,10 @@ function sendForm() {
 	let erroMsg = [];
 	let validForm = true;
 
-	if (name == "" || name.length < 6)
+	if (name == "" || name.length > 0)
 		erroMsg.push("Campo nome está inválido!\n");
 
-	if (lastName == "" || lastName.length < 6)
+	if (lastName == "" || lastName.length > 0)
 		erroMsg.push("Campo sobrenome está inválido!\n");
 
 	if (phone == "" || (/\D/.test(phone) || phone.length < 11))
