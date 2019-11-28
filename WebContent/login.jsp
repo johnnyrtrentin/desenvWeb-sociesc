@@ -32,32 +32,26 @@
     </header>
      <!--         <img id="loginBackground" src="background.png" alt="Background"/> -->
    
-   <div class="container contact-form">
-
-        
-          
+<div class="contact-form">
 	<form action="/desenvolvweb/login" method="POST" onsubmit="return validateLogin()">
-		<h2>Login</h2>
-		<div class="row">
-		<div class="col-md-6">
+		<h2>Bem vindo de volta</h2>
+		<h3>Faça login na sua conta</h3>
 		<div class="form-group">		
-		
-		
-
-			<label for="email">E-mail</label>
+			<label class="loginCabecalho" for="email">E-mail</label><br>
 			<input type="email" id="email" name="email" class="form-control"/></div>
-			
-			<label for="password">Senha</label>
-			<input type="password" id="password" name="password" class="form-control"/></div>
-					<div class="form-group">	
-							
+		<div class="form-group">	
+			<label class="loginCabecalho" for="password">Senha</label><br>
+			<input type="password" id="password" name="password" class="form-control"/>
+		</div>	
+						
 		<div class="loginDivBotao">
-			<button class="loginBotao" type="submit">Login</button></div><br>
-			<div class="loginBotaoCadastro"> 	<a href="${serverURL}/newContact.html">Cadastre-se</a></div>
+		<br>
+			<button class="loginBotao" type="submit">Login</button><br>
+			<button class="loginBotaoCadastro"><a href="${serverURL}/newContact.html">Cadastre-se</a></button>
 		</div>
-		</div>
+
 		<div class="loginImageBack"> <img src="hello1.png" alt="Background"/></div>
 	</form>
-	</div>
+</div>
 </body>
 </html>
