@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
 body{
 font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -46,10 +47,10 @@ font-family: 'Roboto', sans-serif;
 .contact-form{
     background: #fff;
     margin-top: 11%;
-
+font-size: 14px;
     width: 35%;
     color: #5e6c83;
-margin-left:10%;
+margin-left:15%;
 
 }
 .contact-form .form-control{
@@ -66,18 +67,13 @@ margin-left:10%;
 /*========== login ======= */
 .loginImageBack img {
 	    position: absolute;
-    top: 40%; 
-    left: 75%;
+    top: 45%; 
+    left: 70%;
+
+        height: 60%;
     transform: translate(-50%, -50%);  
 }
 
-
-.loginIcon {
-    border-radius: 6rem;
-    width: 7%;
-    margin-top: -3%;
-    margin-left: 10%;
-}
 .loginBotao  {
 	  background-color: #fe7ba4;
   border-style: solid;
@@ -87,10 +83,11 @@ width: 50%;
 padding: 3px;
   text-align: center;
   font-size: 16px;
-  margin-top: 5%;
+  margin-top: 10%;
   margin: 4px 2px;
   text-decoration: none;
   cursor: pointer;
+          margin-left: 8%;
 }
 .loginBotaoCadastro  {
 	  background-color: #ffffff;
@@ -103,17 +100,32 @@ padding: 3px;
   margin: 4px 2px;
   text-decoration: none;
   cursor: pointer;
+            margin-left: 8%;
 }
 .loginBotaoCadastro a:link, a:visited, a:hover, a:active  {
   text-decoration: none;
   color: inherit; 
 }
+.loginCabecalho {
+	        margin-left: 2%;
 
+}
 /*========== .contact-form form {} ======= */ 
 .contact-form h2{
     margin-bottom: 6%;
     margin-top: -12%;
-    color: #5e6c83;
+    color: #2e2e2e;
+    font-size: 30px;
+        margin-left: 6%;
+font-family: 'Abril Fatface', cursive;
+}
+.contact-form h3{
+        margin-left: 15%;
+padding-bottom: 5%;
+    color: rgba(0, 0, 0, 0.54);
+font-size: 20px;
+font-family: 'PT Sans Narrow', sans-serif;
+
 }
 
 /*========== cadastro sucesso ======= */ 
@@ -132,42 +144,64 @@ padding: 3px;
   cursor: pointer;
 }
 .NovoContatoBotao  {
-	background-color: #ffffff;
-	border: 1px solid #fe7ba4;
-	color: #fe7ba4;
-	width: 100%;
-	padding: 3px;
-	margin-top: 15%;
-	text-align: center;
-	font-size: 16px;
-
-	text-decoration: none;
-	cursor: pointer;
+	  background-color: #ffffff;
+  border: 1px solid #fe7ba4;
+  color: #fe7ba4;
+width: 50%;
+padding: 3px;
+padding-left: 40px;
+padding-right: 40px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+font-size: 12px;
+margin-left: 48px;
 }
 .NovoContatoBotao2  {
-	background-color: #ffffff;
-	border: 1px solid #fe7ba4;
-	color: #fe7ba4;
-	width: 100%;
-	padding: 3px;
-	margin-top: 15%;
-	text-align: center;
-	font-size: 16px;
-
-	text-decoration: none;
-	cursor: pointer;
+	  background-color: #ffffff;
+  border: 1px solid #fe7ba4;
+  color: #fe7ba4;
+width: 50%;
+padding: 3px;
+padding-left: 10px;
+padding-right: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-decoration: none;
+  cursor: pointer;
+font-size: 12px;
 }
 .NovoContatoBotao a:link, a:visited, a:hover, a:active  {
   text-decoration: none;
-  color: #fe7ba4; 
-}
-.NovoContatoIcone  {
-
-	height: 70px;
-
+  color: inherit; 
 }
 
+.CadastroBotaoEnviar  {
+	  background-color: #fe7ba4;
+  border-style: solid;
+  border-color: #fe7ba4;
+  color: white;
+width: 50%;
+padding: 3px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20%;
+  margin: 4px 2px;
+  text-decoration: none;
+  cursor: pointer;
+          margin-left: 8%;
+}
 
+.CadastroImageBack img {
+	    position: absolute;
+    top: 55%; 
+    left: 71%;
+
+        height: 90%;
+    transform: translate(-50%, -50%);  
+}
 
 
 
@@ -270,7 +304,7 @@ padding: 3px;
 }
 
 .containerLista {
-		background: #f4f8f9;
+
 	height: 100%;
 	padding-bottom: 100%;
 	color: black;
@@ -279,32 +313,44 @@ padding: 3px;
 	margin-left: -10px;
 	
 }
+.containerLista h1 {
+		    margin-bottom: 2%;
+    color: #2e2e2e;
+    font-size: 30px;
+
+font-family: 'Abril Fatface', cursive;
+}
+
 .tableLista table {
-  width: 90%;
-      border-radius: 2rem;
-    border-collapse: separate;
-  border-spacing: 0 8px;
+  width: 95%;
+
+
 }
 
 .tabletitulo  {
-	background: #f4f8f9;
-	padding-bottom: 5px;
-	padding-left: 5px; 
-	    font-size: 14px;
+font-family: 'PT Sans Narrow', sans-serif;
 	
+	padding-bottom: 5px;
+background: #f4f1f2;
+	    font-size: 16px;
 }
 
-.tableLista th {
-  font-weight: normal;
-  text-align: left;
+.tableLista th{
+
+	padding:7px;
+		    font-size: 14px;
+  border-bottom: 1px solid #f4f1f2;
+
 }
-.tableLista th, td {
-  padding: 0.1em 1em;
-  background: #ffffff;
-	padding:10px;
+.tableLista td {
+
+	padding:7px;
+		    font-size: 14px;
+  border-bottom: 1px solid #f4f1f2;
+
 }
 .tableLista tr:hover td{
-	background: #e7f4fb;
+	background: #f4f4f4;
 }
 .tablelista a {
     text-decoration: none;	
@@ -313,6 +359,38 @@ padding: 3px;
 	height: 5%;
 	
 }
+.ListaImagemVazia img {
+margin-left: 37%;
+	height: 250px;
+
+	margin-bottom: 2%;
+}
+.ListaH2  {
+	    margin-bottom: 6%;
+    margin-top: -12%;
+    color: #2e2e2e;
+    font-size: 30px;
+        margin-left: 6%;
+font-family: 'Abril Fatface', cursive;
+}
+.ListaBotaoEnviar {
+		  background-color: #fe7ba4;
+  border-style: solid;
+  border-color: #fe7ba4;
+  color: white; 
+padding: 3px;
+padding-left: 20px;
+padding-right: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20%;
+  margin: 4px 2px;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+
 .menu {
 widht: 100%;	
 
@@ -323,23 +401,45 @@ widht: 100%;
 	padding-bottom: 20px;
 	color: #5e6c83;
 		text-align: center;
+		
+		
+    color: #2e2e2e;
+
+font-family: 'Abril Fatface', cursive;
 }
 .menu h4 {
-	padding-top: 20px;
-	padding-bottom: 20px;
-		color: #5e6c83;
+
+padding-bottom: 5%;
+    color: rgba(0, 0, 0, 0.54);
+font-size: 20px;
+font-family: 'PT Sans Narrow', sans-serif;
 			text-align: center;
+			
+			
 }
 .menu img {
 	height: 25px;
+}
+.botaoIndex1 {
+	background-color: #ffffff;
+	border: 1px solid #fe7ba4;
+	color: #fe7ba4;
+	width: 100%;
+	padding: 10px;
+	margin-top: 5%;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	margin-left: 35%;
 }
 .botaoIndex {
 	background-color: #ffffff;
 	border: 1px solid #fe7ba4;
 	color: #fe7ba4;
 	width: 100%;
-	padding: 7px;
-	margin-top: 15%;
+	padding: 10px;
+	margin-top: 5%;
 	text-align: center;
 	font-size: 16px;
 	text-decoration: none;
@@ -355,7 +455,14 @@ color: #fe7ba4;
 }
 
 
-
+.AlteraH2  {
+	    margin-bottom: 6%;
+    margin-top: -12%;
+    color: #2e2e2e;
+    font-size: 30px;
+        margin-left: 6%;
+font-family: 'Abril Fatface', cursive;
+}
 
 .invalidLogin img {
 	height: 80px;

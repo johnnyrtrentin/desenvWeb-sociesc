@@ -33,7 +33,7 @@
 	
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
 	
-    <span class="botaoIndex"> <a href="${serverURL}/newContact.html"> <img src="new.png"> Novo Contato</a></span>
+    <span class="botaoIndex1"> <a href="${serverURL}/newContact.html"> <img src="new.png"> Novo Contato</a></span>
 <!-- 	<a href="${serverURL}/menu/edit-contact.jsp">Alterar Contato</a><br> -->
 	<span class="botaoIndex"><a href="${serverURL}/menu/lista-contatos"><img src="list.png">Listar Contato</a></span>
 	<span class="botaoIndex"><a href="${serverURL}/logout"><img src="logout.png">Logout</a></span>

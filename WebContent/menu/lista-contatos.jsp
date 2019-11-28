@@ -17,10 +17,10 @@
         <div class="maxwidth">
             <nav class="top-nav">
                 <ul>
-                    <li> <a href="novo-contato.html">Cadastre-se</a></li>
-                    <li> <a href="novo-contato-sucesso.jsp">Novo Contato - Sucesso</a></li>
-                    <li> <a href="lista-contatos.jsp">Lista Contatos</a></li>
-                    <li> <a href="alterar-contato.jsp">Altera Contato</a></li>
+                    <li> <a href="../newContact.html">Cadastre-se</a></li>
+                    <li> <a href="../newContact-created.jsp">Novo Contato - Sucesso</a></li>
+                    <li> <a href="menu/lista-contatos.jsp">Lista Contatos</a></li>
+                    <li> <a href="menu/alterar-contato.jsp">Altera Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,9 @@
 	
 		<div class="tableLista">
 			<table>
-				<tr>
+
+		<c:if test="${not empty contatos}"> 
+									<tr>
 					<td class="tabletitulo"><strong>NOME</strong></td>
 					<td class="tabletitulo"><strong>E-MAIL</strong></td>
 					<td class="tabletitulo"><strong>SENHA</strong></td>
@@ -44,8 +46,8 @@
 					<td class="tabletitulo"><strong>EXCLUIR</strong></td>
 					<td class="tabletitulo"><strong>ALTERAR</strong></td>
 				</tr>
-		<c:if test="${not empty contatos}"> 
 			<c:forEach items="${contatos}" var="contato">
+
 			<tr>
 							<td>${contato.nome} ${contato.sobrenome}</td>
 							<td>${contato.email}</td>
@@ -59,10 +61,12 @@
 		</c:if>
 
 		<c:if test="${empty contatos}"> 
-			<h2 style="color: red;">Nenhum contato cadastrado</h2>
+
+			<h2 class="ListaH2">A lista está vazia <br>Não há contatos cadastrados</h2>
+					<div class="ListaImagemVazia"><img src="../empty3.png"></div>
 		</c:if>
 		</table>
-		<a href="${serverURL}/index.jsp">Voltar</a>
+		<button class="ListaBotaoEnviar"><a href="${serverURL}/index.jsp">Voltar</a></button>
 		</div>		
 		</div>	
 </body>

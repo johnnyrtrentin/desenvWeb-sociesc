@@ -11,17 +11,17 @@ function sendForm() {
 	let erroMsg = [];
 	let validForm = true;
 
-	if (name == "" || name.length > 0)
-		erroMsg.push("Campo nome está inválido!\n");
+	if (name == "" || name.length < 0)
+		erroMsg.push("Campo nome está vazio!\n");
 
-	if (lastName == "" || lastName.length > 0)
-		erroMsg.push("Campo sobrenome está inválido!\n");
+	if (lastName == "" || lastName.length < 0)
+		erroMsg.push("Campo sobrenome está vazio!\n");
 
 	if (phone == "" || (/\D/.test(phone) || phone.length < 11))
 		erroMsg.push("Campo telefone está inválido!\n");
 
 	if (password == "")
-		erroMsg.push("Campo senha está inválido!\n");
+		erroMsg.push("Campo senha está vazio!\n");
 
 	if (email == "" || /\S+@\S+\.\S+/.test(email))
 		erroMsg.push("Campo e-mail está inválido!\n")

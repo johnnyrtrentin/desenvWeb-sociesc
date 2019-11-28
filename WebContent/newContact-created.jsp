@@ -33,6 +33,7 @@
  
  <div class="contatoSucesso">
 	<div class="resultadoCadastro"> 
+	<br>
 	    <img src="Right.gif" alt="Sucesso no cadastro"/>
 		<h3 class="h3cadastro">Seu cadastro foi realizado<br> com sucesso! </h3> </div>
 			   	
