@@ -18,20 +18,8 @@
 </head>
 <body>
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
-    <header class="top-header clearfix">
-        <div class="maxwidth">
-            <nav class="top-nav">
-                <ul>
-                    <li> <a href="newContact.html">Cadastre-se</a></li>
-                    <li> <a href="newContact-created.jsp">Novo Contato - Sucesso</a></li>
-                    <li> <a href="menu/lista-contatos.jsp">Lista Contatos</a></li>
-                    <li> <a href="menu/alterar-contato.jsp">Altera Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
      <!--         <img id="loginBackground" src="background.png" alt="Background"/> -->
-   
+<br><br><br><br><br><br>
 <div class="contact-form">
 	<form action="/desenvolvweb/login" method="POST" onsubmit="return validateLogin()">
 		<h2>Bem vindo de volta</h2>

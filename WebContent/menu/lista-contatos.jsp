@@ -1,13 +1,13 @@
 <%@page import="model.Contato"%>
 <%@page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Contatos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- verificar se funciona -->
     <link rel="stylesheet" type="text/css" href="../main.css">
@@ -26,7 +26,7 @@
         </div>
     </header>
 <div class="containerLista"> 
-	<h1>Contatos </h1>
+	<h1>Contatos</h1>
 	
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"></c:set>
 	
@@ -53,7 +53,7 @@
 							<td>${contato.email}</td>
 							<td>${contato.senha}</td>
 							<td>${contato.telefone}</td>
-							<td><a href="${serverURL}/menu/excluir-contato?id=${contato.id}"> <img src="../img.png">
+							<td><a href="${serverURL}/menu/excluir-contato?id=${contato.id}"> <img src="../remove.png">
 								</a></td>
 							<td><a href="busca-contato?id=${contato.id}"> <img src="../edit.png"></a></td>
 						</tr>
@@ -62,7 +62,7 @@
 
 		<c:if test="${empty contatos}"> 
 
-			<h2 class="ListaH2">A lista est√° vazia <br>N√£o h√° contatos cadastrados</h2>
+			<h2 class="ListaH2">A lista est· vazia <br>N„o h· contatos cadastrados</h2>
 					<div class="ListaImagemVazia"><img src="../empty3.png"></div>
 		</c:if>
 		</table>

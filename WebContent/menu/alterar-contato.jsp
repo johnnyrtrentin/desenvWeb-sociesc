@@ -26,10 +26,11 @@
             </nav>
         </div>
     </header>
-        <h2 class="AlteraH2">Altere o cadastro</h2>
+      
  <div class="contact-form">
-
-
+  <h2 class="AlteraH2">Altere o cadastro</h2>
+        <h5>	Lorem ipsum primis praesent amet hendrerit gravida pretium, <br>
+	sed id ornare facilisis interdum iaculis, lacus lectus suspendisse. </h5>
 	
 <form action="/desenvolvweb/menu/alterar-contato" method="POST">
 			<input type="hidden"  name="id" value="${contato.id}">
@@ -57,7 +58,7 @@
 	
 		
 
-	<div class="form-group"> <button class="CadastroBotaoEnviar" type="submit" value="Alterar"> Alterar</button></div>
+	<div class="form-group"><br> <button class="CadastroBotaoEnviar" type="submit" value="Alterar"> Alterar</button></div>
 
 </form>
 		</div>

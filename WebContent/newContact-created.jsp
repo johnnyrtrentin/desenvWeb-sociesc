@@ -21,7 +21,7 @@
     <div class="maxwidth">
     <nav class="top-nav">
                 <ul>
-                    <li> <a href="newContact.html">Cadastre-se</a></li>
+                    <li> <a href="newContact.html">Cadastro</a></li>
                     <li> <a href="newContact-created.jsp">Novo Contato - Sucesso</a></li>
                     <li> <a href="menu/lista-contatos.jsp">Lista Contatos</a></li>
                     <li> <a href="menu/alterar-contato.jsp">Altera Contato</a></li>
