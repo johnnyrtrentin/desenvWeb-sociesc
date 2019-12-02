@@ -8,19 +8,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Contatos</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- verificar se funciona -->
-    <link rel="stylesheet" type="text/css" href="../main.css">
+	<title>Listar Contatos</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/main.css">
 </head>
 <body>
    <header class="top-header clearfix">
         <div class="maxwidth">
             <nav class="top-nav">
                 <ul>
-                    <li> <a href="../newContact.html">Cadastre-se</a></li>
-                    <li> <a href="../newContact-created.jsp">Novo Contato - Sucesso</a></li>
-                    <li> <a href="menu/lista-contatos.jsp">Lista Contatos</a></li>
-                    <li> <a href="menu/alterar-contato.jsp">Altera Contato</a></li>
+                    <li> <a href="../index.jsp">Home</a></li>                
+                    <li> <a href="../newContact.html">Cadastrar</a></li>
+                    <li> <a href="lista-contatos.jsp">Listar</a></li>
+                    <li> <a href="alterar-contato.jsp">Alterar </a></li>
                 </ul>
             </nav>
         </div>
@@ -53,17 +52,17 @@
 							<td>${contato.email}</td>
 							<td>${contato.senha}</td>
 							<td>${contato.telefone}</td>
-							<td><a href="${serverURL}/menu/excluir-contato?id=${contato.id}"> <img src="../remove.png">
+							<td><a href="${serverURL}/menu/excluir-contato?id=${contato.id}"> <img src="../resources/images/remove.png">
 								</a></td>
-							<td><a href="busca-contato?id=${contato.id}"> <img src="../edit.png"></a></td>
+							<td><a href="busca-contato?id=${contato.id}"> <img src="../resources/images/edit.png"></a></td>
 						</tr>
 			</c:forEach>
 		</c:if>
 
 		<c:if test="${empty contatos}"> 
 
-			<h2 class="ListaH2">A lista está vazia <br>Não há contatos cadastrados</h2>
-					<div class="ListaImagemVazia"><img src="../empty3.png"></div>
+			<h2 class="ListaH2">A lista está vazia <br>Não existem contatos cadastrados</h2>
+					<div class="ListaImagemVazia"><img src="../resources/images/empty3.png"></div>
 		</c:if>
 		</table>
 		<button class="ListaBotaoEnviar"><a href="${serverURL}/index.jsp">Voltar</a></button>

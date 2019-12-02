@@ -7,12 +7,9 @@
 <html lang="pt-br">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Novo Contato</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Cadastrar Contato</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 	<meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
@@ -34,7 +31,7 @@
  <div class="contatoSucesso">
 	<div class="resultadoCadastro"> 
 	<br>
-	    <img src="Right.gif" alt="Sucesso no cadastro"/>
+	    <img src="resources/images/Right.gif" alt="Sucesso no cadastro"/>
 		<h3 class="h3cadastro">Seu cadastro foi realizado<br> com sucesso! </h3> </div>
 			   	
 		<span class="titulo">Nome: </span> <span class="conteudo"> ${contato.nome} ${contato.sobrenome}</span><br>

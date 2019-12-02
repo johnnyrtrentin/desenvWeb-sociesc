@@ -6,22 +6,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Alterar o Contato</title>
-    <link rel="stylesheet" type="text/css" href="../main.css">	
+<title>Alterar Contato</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/main.css">	
 	<script type="text/javascript" src="resources/js/validate-form.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
    <header class="top-header clearfix">
         <div class="maxwidth">
             <nav class="top-nav">
                 <ul>
-                    <li> <a href="../newContact.html">Cadastre-se</a></li>
-                    <li> <a href="../newContact-created.jsp">Novo Contato - Sucesso</a></li>
-                    <li> <a href="menu/lista-contatos.jsp">Lista Contatos</a></li>
-                    <li> <a href="menu/alterar-contato.jsp">Altera Contato</a></li>
+                    <li> <a href="index.jsp">Home</a></li>                
+                    <li> <a href="newContact.html">Cadastrar</a></li>
+                    <li> <a href="menu/lista-contatos.jsp">Listar</a></li>
+                    <li> <a href="menu/alterar-contato.jsp">Alterar </a></li>
                 </ul>
             </nav>
         </div>

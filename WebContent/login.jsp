@@ -7,18 +7,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- verificar se funciona -->
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
     <script type="text/javascript" src="resources/js/validate-login.js"></script>
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
-     <!--         <img id="loginBackground" src="background.png" alt="Background"/> -->
 <br><br><br><br><br><br>
 <div class="contact-form">
 	<form action="/desenvolvweb/login" method="POST" onsubmit="return validateLogin()">
@@ -38,7 +32,7 @@
 			<button class="loginBotaoCadastro"><a href="${serverURL}/newContact.html">Cadastre-se</a></button>
 		</div>
 
-		<div class="loginImageBack"> <img src="hello1.png" alt="Background"/></div>
+		<div class="loginImageBack"> <img src="resources/images/hello1.png" alt="Background"/></div>
 	</form>
 </div>
 </body>

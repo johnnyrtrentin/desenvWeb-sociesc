@@ -6,22 +6,19 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Página Principal</title>
+	<title>Home</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
 </head>
 <body>
 <header class="top-header clearfix">
         <div class="maxwidth">
             <nav class="top-nav">
                 <ul>
-                    <li> <a href="newContact.html">Cadastre-se</a></li>
-                    <li> <a href="newContact-created.jsp">Novo Contato - Sucesso</a></li>
-                    <li> <a href="menu/lista-contatos.jsp">Lista Contatos</a></li>
-                    <li> <a href="menu/alterar-contato.jsp">Altera Contato</a></li>
+                    <li> <a href="index.jsp">Home</a></li>                
+                    <li> <a href="newContact.html">Cadastrar</a></li>
+                    <li> <a href="menu/lista-contatos.jsp">Listar</a></li>
+                    <li> <a href="menu/alterar-contato.jsp">Alterar </a></li>
                 </ul>
             </nav>
         </div>
@@ -34,10 +31,9 @@
 	<c:set var="serverURL" value="${pageContext.request.contextPath}"/>
 	
 	<div class="grid-container">
-    <div class="IndexCol1">  <a href="${serverURL}/newContact.html"> <img src="add1.png"><br> </a>Criar novo contato <br> </div>
-<!-- 	<a href="${serverURL}/menu/edit-contact.jsp">Alterar Contato</a><br> -->
-	<div class="IndexCol2"><a href="${serverURL}/menu/lista-contatos"><img src="iconcadastro.png"></a><br><br>Lista de Contatos <br> </div>
-	<div class="IndexCol3"><a href="${serverURL}/logout"><img src="logout.png"></a><br>Sair  <br></div>
+    <div class="IndexCol1">  <a href="${serverURL}/newContact.html"> <img src="resources/images/new.png"><br> </a>Criar Novo Contato <br> </div>
+	<div class="IndexCol2"><a href="${serverURL}/menu/lista-contatos"><img src="resources/images/list.png"></a><br><br>Lista de Contatos <br> </div>
+	<div class="IndexCol3"><a href="${serverURL}/logout"><img src="resources/images/logout.png"></a><br>Sair  <br></div>
 	</div>
 </div>
 </body>
