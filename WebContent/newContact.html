@@ -1,65 +1,70 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Cadastrar Contato</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/main.css">	
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 	<script type="text/javascript" src="resources/js/validate-form.js"></script>
 </head>
 <body>
-    <header class="top-header clearfix">
-        <div class="maxwidth">
-            <nav class="top-nav">
-                <ul>
-                    <li> <a href="index.jsp">Home</a></li>                
-                    <li> <a href="newContact.html">Cadastrar</a></li>
-                    <li> <a href="menu/lista-contatos.jsp">Listar</a></li>
-                    <li> <a href="menu/alterar-contato.jsp">Alterar </a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<header class="top-header clearfix">
+		<div class="maxwidth">
+			<nav class="top-nav">
+				<ul>
+					<li><a href="index.jsp">Home</a></li>
+					<li><a href="newContact.html">Cadastrar</a></li>
+					<li><a href="menu/lista-contatos.jsp">Listar</a></li>
+					<li><a href="/desenvolvweb/logout">Sair</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-    <div class="contact-form">
+	<div class="contact-form">
+		<form action="/desenvolvweb/novo-contato" method="POST"	onsubmit="return sendForm()">
 
+			<h2>Efetue o cadastro</h2>
+			<h5>Lorem ipsum primis praesent amet hendrerit gravida pretium,
+				sed id ornare facilisis interdum iaculis, lacus lectus suspendisse.
+			</h5>
+			<div class="form-group">
+				<label class="loginCabecalho" for="email">Nome</label><br> <input
+					type="text" name="nome" class="form-control" />
+			</div>
 
-<form action="/desenvolvweb/novo-contato" method="POST" onsubmit="return sendForm()">
+			<div class="form-group">
+				<label class="loginCabecalho" for="email">Sobrenome</label><br>
+				<input type="text" name="sobrenome" class="form-control" />
+			</div>
 
+			<div class="form-group">
+				<label class="loginCabecalho" for="email">Telefone</label><br>
+				<input type="text" name="telefone" class="form-control" />
+			</div>
 
-    <h2>  Efetue o cadastro</h2>
-	<h5>	Lorem ipsum primis praesent amet hendrerit gravida pretium, 
-	sed id ornare facilisis interdum iaculis, lacus lectus suspendisse. </h5>
-	<div class="form-group"> 
-	<label class="loginCabecalho" for="email">Nome</label><br>
-	<input type="text" name="nome" class="form-control"  /></div>
-	
-	<div class="form-group"> 
-	<label class="loginCabecalho" for="email">Sobrenome</label><br>
-	<input type="text" name="sobrenome" class="form-control"  /></div>
-	
-		
-    <div class="form-group"> 
-	<label class="loginCabecalho" for="email">Telefone</label><br>    
-    <input type="text" name="telefone" class="form-control" /></div>
-    
-    <div class="form-group"> 
-	<label class="loginCabecalho" for="email">E-mail</label><br>     
-	<input type="text" name="email" class="form-control"  /></div>
-    
-        <div class="form-group"> 
-	<label class="loginCabecalho" for="email">Senha</label><br>  
-	<input type="password" name="password" class="form-control"  /></div>
-    <br>
-    <div class="form-group"> <button type="submit" class="CadastroBotaoEnviar" value="Enviar">Enviar</button></div>
+			<div class="form-group">
+				<label class="loginCabecalho" for="email">E-mail</label><br> <input
+					type="text" name="email" class="form-control" />
+			</div>
 
-    <p> </p>            
-	<span> <a class="NovoContatoBotao" href="http://localhost:8080/desenvolvweb/login.jsp">Login</a>
-<a class="NovoContatoBotao2" href="http://localhost:8080/desenvolvweb/index.jsp">Menu Principal</a></span>
+			<div class="form-group">
+				<label class="loginCabecalho" for="email">Senha</label><br> <input
+					type="password" name="password" class="form-control" />
+			</div>
+			<br>
+			<div class="form-group">
+				<button type="submit" class="CadastroBotaoEnviar" value="Enviar">Enviar</button>
+			</div>
 
-</form>
+			<p></p>
+			<span style="text-align: center; margin: 4px 2px; margin-left: 35%;"> 
+				<a class="NovoContatoBotao2" href="/desenvolvweb/index.jsp">Menu Principal</a>
+			</span>
+		</form>
 
-<div class="CadastroImageBack"> <img src="resources/images/cad3.png" alt="Background"/></div>
-</div>
+		<div class="CadastroImageBack">
+			<img src="resources/images/cad3.png" alt="Background" />
+		</div>
+	</div>
 </body>
 </html>
