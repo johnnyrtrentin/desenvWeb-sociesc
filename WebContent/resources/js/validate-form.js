@@ -11,10 +11,10 @@ function sendForm() {
 	let erroMsg = [];
 	let validForm = true;
 
-	if (name == "" || name.length < 0)
+	if (name == "")
 		erroMsg.push("Campo nome está vazio!\n");
 
-	if (lastName == "" || lastName.length < 0)
+	if (lastName == "")
 		erroMsg.push("Campo sobrenome está vazio!\n");
 
 	if (phone == "" || (/\D/.test(phone) || phone.length < 11))
