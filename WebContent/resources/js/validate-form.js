@@ -23,7 +23,7 @@ function sendForm() {
 	if (password == "")
 		erroMsg.push("Campo senha está vazio!\n");
 
-	if (email == "" || /\S+@\S+\.\S+/.test(email))
+	if (email == "" || !/^\S+@\S+$/.test(email))
 		erroMsg.push("Campo e-mail está inválido!\n")
 
 	if (erroMsg.length > 0) {
