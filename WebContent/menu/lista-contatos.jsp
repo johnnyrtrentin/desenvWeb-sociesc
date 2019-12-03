@@ -45,15 +45,15 @@
 					
 					<c:forEach items="${contatos}" var="contato">
 						<tr>
-							<td>${contato.nome}${contato.sobrenome}</td>
+							<td>${contato.nome} ${contato.sobrenome}</td>
 							<td>${contato.email}</td>
 							<td>${contato.senha}</td>
 							<td>${contato.telefone}</td>
 							<td><a
-								href="${serverURL}/menu/excluir-contato?id=${contato.id}"> <img
+								href="${serverURL}/menu/excluir-contato?id=${contato.id}"> <img class="imgtable"
 									src="../resources/images/remove.png">
 							</a></td>
-							<td><a href="busca-contato?id=${contato.id}"> <img
+							<td><a href="busca-contato?id=${contato.id}"> <img class="imgtable"
 									src="../resources/images/edit.png"></a></td>
 						</tr>
 					</c:forEach>

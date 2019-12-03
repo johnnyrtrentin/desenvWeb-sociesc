@@ -346,11 +346,6 @@ border-bottom: 1px solid #f4f4f4;
 text-decoration: none;	
 }
 
-.containerLista img {
-height: 5%;
-margin-left: 12%;
-}
-
 .ListaImagemVazia img {
 margin-left: 37%;
 height: 250px;
@@ -484,4 +479,10 @@ height: 120px;
 margin-left:5%;
 height: 120px;
 margin-bottom: 3%;
+}
+
+.imgtable { 
+height: 5%;
+margin-left: 12%;
+	
 }
